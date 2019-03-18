@@ -7,6 +7,7 @@
 ###### As Linus Torvalds said:
 > *"Talk is cheap. Show me the code."*
 
+-----------------------------
 
 ### **Viikko 1**
 
