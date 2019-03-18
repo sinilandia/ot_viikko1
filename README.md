@@ -9,5 +9,7 @@
 
 
 ### **Viikko 1**
+
 [gitlog.txt](https://github.com/sinilandia/ot_viikko1/blob/master/laskarit/gitlog.txt)
+
 [komentorivi.txt](https://github.com/sinilandia/ot_viikko1/blob/master/laskarit/komentorivi.txt)
