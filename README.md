@@ -13,13 +13,13 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
-| 18.4. | 3    | Materiaaliin tutustumista ja aiheen pohdintaa. Tutkiskelua mistä / miten saa sää-APIn, miten Telegram-botti rakennetaan |
-| 19.2. | 0    | N/A |
+| 21.4. | 3    | Materiaaliin tutustumista ja aiheen pohdintaa. Tutkiskelua mistä / miten saa sää-APIn, miten Telegram-botti rakennetaan |
+| 24.4. | 1.5  | Vaatimusmäärittely-dokumentin kirjoitus |
 |       |      |  |
 | 4.3.  | 0    | N/A | 
 | 4.3.  | 0    | N/A |  
 | 4.3.  | 0    | N/A | 
-| total | 3    | | 
+| total | 4.5    | | 
 
 -----------------------------
 
@@ -32,3 +32,4 @@
 
 ### **Viikko 2**
 
+[testikattavuus.jpg](https://github.com/sinilandia/ot_viikko1/blob/master/laskarit/viikko2/testikattavuus_Unicafe.png)
