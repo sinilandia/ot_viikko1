@@ -5,7 +5,9 @@
 With this software, the users can keep tab on the Pokemon Go Raids and find out which raids they've attended and if they're eligible for EX Raid invitations.
 
 > *Pokemon Go Raids are organized multiple times per day, when players gather together to fight the raid boss at the same time, at the same physical location called a Gym. Players get 1 raid pass/day. Raids show up in the game approximately 1 hour before the raid starts.
+
 EX Raids are special raids organized once / 2 weeks / gym. EX raids are only organized at special, EX Raid gyms. Players can get an EX Raid invitation when s/he has previously won a regular raid at that gym. Invitations are sent approximately one week before the EX Raid. Player can invite one friend to an EX Raid.
+
 There is no open API for Pokemon Go Raids. Therefore, users need to add this information manually.*
 
 
