@@ -34,16 +34,24 @@ public class Raid {
         return id;
     }
 
+    public String getStar() {
+        return star;
+    }
+    
+    public Gym getGym() {
+        return gym;
+    }
+    
     public LocalDate getDate() {
         return date;
     }
 
-    public boolean isRaided() {
-        return raided;
+    public LocalTime getTime() {
+        return time;
     }
 
-    public Gym getGym() {
-        return gym;
+    public boolean getRaided() {
+        return raided;
     }
 
     public void setRaided() {
@@ -59,7 +67,8 @@ public class Raid {
         return gym + " " + star + "*\n" + date + "\n" + time+ "\n";
     }
     
-    
+    //improvement ideas:
+    //add set() methods so that user can later edit input if they typoed
     
     
 }

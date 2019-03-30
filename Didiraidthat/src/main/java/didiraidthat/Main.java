@@ -13,10 +13,12 @@ import java.util.Scanner;
  *
  * @author siniliu
  */
+
+
+
 public class Main {
-    
-    
   public static void main(String[] args) {
+      
 	
       ArrayList allRaids = new ArrayList<>();
       ArrayList allGyms = new ArrayList<>();
@@ -50,6 +52,9 @@ public class Main {
       int idRaidExa = allRaids.indexOf(raidExa);
       raidExa.setId(idRaidExa);
       
+      //create Logic
+      Logic logic = new Logic();
+      
       //UI
       Scanner userInput = new Scanner( System.in );
       String reply = "";
@@ -67,18 +72,11 @@ public class Main {
         reply = userInput.next();
         
         //show raids one at a time from list allRaids 
-        if (reply.equalsIgnoreCase("1")){
-            for (int counter = 0; counter < allRaids.size(); counter++) { 		      
-                System.out.println(allRaids.get(counter)); 
-                System.out.println("Do you want to participate in this raid? Y/N");
-                reply = userInput.next();
-                
-                if(reply.equalsIgnoreCase("y")){
-                    userRaided.add(allRaids.get(counter));
-                    System.out.println("You signed up for the raid.\n");
-                }
-            }   
-       
+        if (reply.equalsIgnoreCase("1")){  
+            ArrayList list = logic.userSignsUpForRaid(allRaids);        
+            for (int i = 0 ; i<list.size();i++){
+                userRaided.add(list.get(i)) ;
+            }           
         }
         
         //show list allRaids
