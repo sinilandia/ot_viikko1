@@ -17,3 +17,36 @@ engine-->-tank: consume(10)
 
 
 https://www.websequencediagrams.com/?lz=dGl0bGUgT2h0ZTogdmlpa2tvMyAKCk1haW4tPisqbWFjaGluZTogbmV3IE0ABwYoKQoAEActPip0YW5rABgGRnVlbHRhbmsAEwwAGAZmaWxsKDQwACwLLSplbmcATwlFAAcFKHRhbmspAHIJAHEJZHJpdgBnDSsANAhzdGFydCgpCgBGBi0tPi0AgQgGY29uc3VtZSg1ACEUaXNSdW5uaW5nAC0MAC8JdGVudHNMZWZ0KCkKdGFuay0tPi0AgSMIZnVlbEMAHAcgPSAzNQBuCwCCHwl0cnVlAIEYE3VzZUVuZXJneQCBFBsxMCkKCgoKCgo&s=qsd
+
+
+title Ohte: viikko3 HSL
+
+Main->*laitehallinto: new HKLLaitehallinto()
+Main->*rautatietori: new Lataajalaite()
+Main->*ratikka6: new Lukijalaite()
+Main->*bussi244: new Lukijalaite()
+
+Main -> laitehallinto: lisaaLataaja(rautatietori)
+Main -> laitehallinto: lisaaLukija(ratikka6)
+Main -> laitehallinto: lisaaLukija(bussi244)
+
+Main ->*lippuluukku: new Kioski()
+Main ->+lippuluukku: ostaMatkakortti("Arto")
+lippuluukku ->*artonKortti: new Matkakortti("Arto")
+lippuluukku-->-Main: uusiKortti 
+
+Main ->+rautatietori: lataaArvoa(artonKortti, 3)
+rautatietori->-artonKortti: kasvataArvoa(3)
+
+Main->+ratikka6: ostaLippu(artonKortti, 0)
+ratikka6->artonKortti: getArvo()
+artonKortti-->ratikka6: 3
+ratikka6->artonKortti: vahennaArvoa(1.5)
+ratikka6-->-Main: true
+
+Main->+bussi244: ostaLippu(artonKortti, 2);
+bussi244->artonKortti: getArvo()
+artonKortti-->bussi244: 1.5
+bussi244-->-Main: false
+
+https://www.websequencediagrams.com/?lz=dGl0bGUgT2h0ZTogdmlpa2tvMyBIU0wKCk1haW4tPipsYWl0ZWhhbGxpbnRvOiBuZXcgSEtMTAAKDCgpACUIcmF1dGF0aWV0b3JpACYGTGF0YWFqYQBBBQAcDHRpa2thNgAdB3VraQASEWJ1c3NpMjQ0AA8UAIEXBSAtPiAAgQ4PbGlzYWEAawcoAIEADACBGwYAGRkAewUoAIENCAAIJQCBFwgAgQMKKmxpcHB1bHV1a2t1AIIiBktpb3NraQCCFwcgLT4rABUNb3N0YU1hdGtha29ydHRpKCJBcnRvIikKADwLIC0-KmFydG9uSwAeBQCCeAYAFR8tLT4tTWFpbjogdXVzaQAzBiAAgikJKwCDFA5sYXRhYUFydm9hKABdCywgMykKAIM_DC0-LQB6DWthc3ZhdAAyBzMAgwkHAFgFAINPCG9zdGFMaXBwdQBKDjApCgCDcwgtPgCBTQ1nZXRBcnZvKCkKAIFmCy0tPgCEIAozACMYdmFoZW5uAIFABzEuNQBZCwCCAwl0cnVlAIEeCQCEUQoAgRAXMik7CgCEeAgAgQEnAIUlCjEuNQAzCgCDBAlmYWxzZQ&s=qsd
