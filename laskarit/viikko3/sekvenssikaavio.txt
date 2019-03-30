@@ -1,0 +1,19 @@
+title Ohte: viikko3 
+
+Main->+*machine: new Machine()
+machine->*tank: new Fueltank()
+machine->tank: fill(40)
+machine->-*engine: new Engine(tank)
+
+Main->+machine: drive()
+machine->+engine: start()
+engine-->-tank: consume(5)
+machine->+engine: isRunning()
+engine-->tank: contentsLeft()
+tank-->-engine: fuelContents = 35
+engine-->-machine: true
+machine->+engine: useEnergy()
+engine-->-tank: consume(10)
+
+
+https://www.websequencediagrams.com/?lz=dGl0bGUgT2h0ZTogdmlpa2tvMyAKCk1haW4tPisqbWFjaGluZTogbmV3IE0ABwYoKQoAEActPip0YW5rABgGRnVlbHRhbmsAEwwAGAZmaWxsKDQwACwLLSplbmcATwlFAAcFKHRhbmspAHIJAHEJZHJpdgBnDSsANAhzdGFydCgpCgBGBi0tPi0AgQgGY29uc3VtZSg1ACEUaXNSdW5uaW5nAC0MAC8JdGVudHNMZWZ0KCkKdGFuay0tPi0AgSMIZnVlbEMAHAcgPSAzNQBuCwCCHwl0cnVlAIEYE3VzZUVuZXJneQCBFBsxMCkKCgoKCgo&s=qsd
