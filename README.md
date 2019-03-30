@@ -23,3 +23,6 @@
 [testikattavuus.jpg](https://github.com/sinilandia/ot_viikko1/blob/master/laskarit/viikko2/testikattavuus_Unicafe.png)
 
 [Vaatimusmäärittely-dokumentti](https://github.com/sinilandia/ot_viikko1/blob/master/documentation/srs.md)
+
+### **Viikko 3**
+[Viikko 3](https://github.com/sinilandia/ot_viikko1/tree/master/laskarit/viikko3)
