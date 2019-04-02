@@ -26,3 +26,4 @@
 
 ### **Viikko 3**
 [Viikko 3](https://github.com/sinilandia/ot_viikko1/tree/master/laskarit/viikko3)
+Disclaimer: sovelluksen tiedostoissa GitHubissa esiintyy 2 kansiota: DidIRaidThat ja Didiraidthat. DidIRaidThatissa on vain pom.xml ja Didiraidthatissa on kaikki loput tiedostot. En saa näitä mitenkään yhdistettyä yhdeksi tiedostoksi, vaikka olen poistanut tiedostot koneelta kokonaan ja kloonannut repon GitHubista takaisin koneelle. Kun ryhmän vetäjät kokeilivat, heidän kloonattuaan reponi, ilmestyi heille 2 eri kansiota. Minulle ilmestyy vain 1. En osaa troubleshootaa tätä, mutta menen pajaan loppuviikosta ratkomaan ongelmaa.
